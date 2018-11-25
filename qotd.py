@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import http.client
 from xml.dom.minidom import parse
 import xml.dom.minidom
