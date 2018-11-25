@@ -7,18 +7,9 @@ conn.request("GET", "/quote/quote.php?action=random_quote_rss")
 response = conn.getresponse()
 xxml = response.read() 
 
-index = str(xxml).find("<!")
-index /= 2
-
-xxml = str(xxml[int(index):])
-xxml = xxml[2:]
-
-index = str(xxml).find("<rss")
-
-xxml = str(xxml[int(index):])
-
-index = str(xxml).find("</rss>")
-xxml = str(xxml[:index+6])
+xxstart = str(xxml).find("<rss")
+xxend = str(xxml).find("</rss>")
+xxml = str(xxml)[xxstart:xxend+6]
 
 DOMTree = xml.dom.minidom.parseString(xxml)
 collection = DOMTree.documentElement.getElementsByTagName("item")
