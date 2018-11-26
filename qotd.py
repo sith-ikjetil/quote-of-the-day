@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+#: Title        : qotd.py
+#: Date         : 2018-11-24
+#: Author       : "Kjetil Kristoffer Solberg" <post@ikjetil.no>
+#: Version      : 1.0
+#: Descriptions : Prints out a quote of the day to terminal window
+
 import http.client
 from xml.dom.minidom import parse
 import xml.dom.minidom
