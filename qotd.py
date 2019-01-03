@@ -23,6 +23,6 @@ collection = DOMTree.documentElement.getElementsByTagName("item")
 
 print("== Quote of the Day ==")
 for e in collection:
-    print( e.getElementsByTagName("description")[0].childNodes[0].data )
+    print( e.getElementsByTagName("description")[0].childNodes[0].data.replace("\\'","'") )
     print( "    :: " + e.getElementsByTagName("title")[0].childNodes[0].data )
     break
