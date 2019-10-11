@@ -8,3 +8,5 @@ that is in you path.
 "Think of all the beauty that's still left in and around you, and be happy."
     :: Anne Frank
 ```
+
+**NB! THIS SOFTWARE HAS NO LICENSE!**
